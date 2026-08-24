@@ -1,12 +1,11 @@
-Complete Guide: Setting Up the Zedu Frontend For Windows, macOS, and Linux on Local
-This guide explains how to download, install, set up, and run the Zedu frontend project on Windows, macOS, and Linux.
+** Setting Up the Zedu Frontend For Windows, macOS, and Linux on Local
+This guide explains how to download, install, set up, and run the Zedu frontend project on Windows, macOS, and Linux**
 
-Step 1: Download and Install VS Code
+**Step 1: Download and Install VS Code**
 VS Code is the application we will use to open and work on the project.
 Download VS Code from the official website:
 https://code.visualstudio.com/download
 VS Code provides installers for Windows, macOS, and Linux.
-
 Windows
 Open the VS Code website.
 Click Download for Windows.
@@ -17,7 +16,6 @@ Accept the license agreement.
 Continue clicking Next.
 Complete the installation.
 Open VS Code.
-
 macOS
 Open the VS Code website.
 Click Download for macOS.
@@ -25,7 +23,6 @@ Open the downloaded .dmg file.
 Drag Visual Studio Code into the Applications folder.
 Open the Applications folder.
 Open Visual Studio Code.
-
 Linux
 Open the VS Code website.
 Choose the Linux version that matches your distribution.
@@ -34,7 +31,7 @@ For Fedora/RHEL-based systems, download the .rpm package.
 Install the downloaded package.
 Open VS Code.
 
-Step 2: Install Git
+**Step 2: Install Git**
 Git is required to download the Zedu project from GitHub.
 Windows
 Download and install Git from:
@@ -66,9 +63,8 @@ After installation, verify Git:
 git --version
 
 
-Step 3: Open a Terminal
+**Step 3: Open a Terminal**
 You will use the terminal to download and run the project.
-
 Windows
 You can use any of these:
 Command Prompt
@@ -80,7 +76,6 @@ To open PowerShell:
 Click the Windows Start button.
 Search for PowerShell.
 Open Windows PowerShell.
-
 macOS
 Open:
 Applications → Utilities → Terminal
@@ -89,7 +84,7 @@ Linux
 Open your Terminal application.
 
 
-Step 4: Create or Go to Your Projects Folder
+**Step 4: Create or Go to Your Projects Folder**
 Windows
 Open PowerShell and run:
 cd $HOME
@@ -120,7 +115,7 @@ pwd
 
 
 
-Step 5: Download the Zedu Project
+**Step 5: Download the Zedu Project**
 The Zedu frontend project is available here:
 https://github.com/zeduapp/telex_fe
 Run this command:
@@ -132,7 +127,7 @@ macOS
 Linux
 Wait for Git to finish downloading the project.
 
-Step 6: Enter the Project Folder
+**Step 6: Enter the Project Folder**
 After the download is complete, run:
 cd telex_fe
 
@@ -148,15 +143,14 @@ The path should end with:
 telex_fe
 
 
-Step 7: Open the Project in VS Code
+**Step 7: Open the Project in VS Code**
 While you are inside the telex_fe folder, run:
 Type “code .”
 
 This should open the project in VS Code.
 You should see the Zedu project files on the left side of VS Code.
 
-Step 8: Open the VS Code Terminal
-
+**Step 8: Open the VS Code Terminal**
 Once the project is open in VS Code:
 Click Terminal at the top of VS Code.
 Click New Terminal.
@@ -165,8 +159,7 @@ Make sure the terminal is inside the telex_fe folder.
 The location should end with:
 telex_fe
 
-Step 9: Check the Project Requirements
-
+**Step 9: Check the Project Requirements**
 The project requires specific versions of Node.js and pnpm.
 Run:
 cat package.json | grep '"packageManager"\|"engines"'
@@ -180,8 +173,7 @@ For this project, make sure you have:
 Node.js 22+
 pnpm 10.27.0
 
-Step 10: Install NVM
-
+**Step 10: Install NVM**
 NVM allows you to install and switch between different Node.js versions.
 The installation is different for Windows and macOS/Linux.
 
@@ -223,8 +215,7 @@ Then check NVM:
 nvm --version
 
 You should see an NVM version number.
-
-Step 11: Install Node.js 22
+**Step 11: Install Node.js 22**
 Now install Node.js 22.
 The command is the same for Windows, macOS, and Linux.
 Windows
@@ -243,8 +234,7 @@ Then:
 nvm use 22
 
 
-Step 12: Set Node.js 22 as the Default
-
+**Step 12: Set Node.js 22 as the Default**
 This prevents you from having to manually select Node.js 22 every time.
 macOS/Linux
 Run:
@@ -259,7 +249,7 @@ Then verify that Node.js 22 is active.
 If you install multiple Node.js versions later, run:
 nvm use 22
 
-Step 13: Verify Node.js
+**Step 13: Verify Node.js**
 Run:
 node -v
 
@@ -280,15 +270,14 @@ Then check again:
 node -v
 
 
-Step 14: Verify npm
-
+**Step 14: Verify npm**
 Node.js comes with npm.
 Run:
 npm -v
 
 You should see an npm version number.
 
-Step 15: Install pnpm 10.27.0
+**Step 15: Install pnpm 10.27.0**
 The project requires:
 pnpm 10.27.0
 
@@ -297,7 +286,7 @@ Run:
 npm install -g pnpm@10.27.0
 
 
-Step 16: Verify pnpm
+**Step 16: Verify pnpm**
 Run:
 pnpm --version
 
@@ -307,7 +296,7 @@ The expected output is:
 If you see:
 10.27.0
 
-Step 17: Check Everything Before Continuing
+**Step 17: Check Everything Before Continuing**
 At this point, you should have:
 Node.js
 Run:
@@ -332,7 +321,7 @@ Git
 Run:
 git --version
 
-Step 18: Make Sure You Are Inside the Project
+**Step 18: Make Sure You Are Inside the Project**
 Before installing the project dependencies, make sure you are inside:
 telex_fe
 
@@ -346,7 +335,7 @@ cd $HOME\Documents\telex_fe
 Then check your location:
 pwd
 
-Step 19: Install the Project Dependencies
+**Step 19: Install the Project Dependencies**
 Now install everything the project needs.
 Run:
 pnpm install
@@ -356,7 +345,7 @@ Wait for the process to finish.
 Do not close the terminal while the installation is running.
 Depending on your internet connection, this may take some time.
 When it finishes successfully, continue to the next step.
-Step 20: Start the Development Server
+**Step 20: Start the Development Server**
 Run:
 pnpm dev
 
@@ -369,7 +358,7 @@ The port may be different depending on the project's configuration.
 For example, it could also be:
 http://localhost:3001
 
-Step 21: Open the Project in Your Browser
+**Step 21: Open the Project in Your Browser**
 Copy the localhost URL shown in the terminal.
 For example:
 http://localhost:3000
