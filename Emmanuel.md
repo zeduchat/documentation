@@ -99,9 +99,8 @@ git clone https://github.com/zeduchat/zedu-fe.git
 Step 6 Enter the Project Folder
 If the cloning worked, 
 The next step is accessing the Zedu frontend project
-Run:  cd zedu-fe   in the terminal
-You should see something like this PS C:\Users\USER\Documents\zedu-fe>
-If you do, you’re inside Zedu frontend project
+You already did this when you ran:  cd zedu-fe   in the terminal
+if you did this in step 5 you’re inside Zedu frontend project
 Lets go to the next step 
 
 Step 7 Open the Project in VS Code
@@ -113,7 +112,7 @@ It should open a new VS Code with Zedu project files on the left side of VS Code
 OR
 Go to file explorer, go to documents and open  zedu-fe folder through vs code
 
-Step 8: Open the VS Code Terminal
+Step 8: Open the VS Code Terminal in the new Vs code window
 A terminal will open at the bottom of VS Code.
 Make sure the terminal is inside the zedu-fe folder.
 The location should end with:
@@ -193,7 +192,7 @@ You'll use npm to install tools and project dependencies
 Node.js comes with npm.
 Run:
 npm -v
-You should see an npm version number. 11.6.0   OR   10.8.2
+You should see an npm version number like 11.17.0, 11.6.0   OR   10.8.2
 
 If you get PowerShell error 
 If you see:
@@ -213,12 +212,11 @@ Do you want to change the execution policy?
 Type:
 Y
 and press Enter.
-.
 
 Step 15: Install pnpm 10.27.0
 The project requires:
 pnpm 10.27.0
-Make sure Node.js 22 is currently active before installing pnpm.
+Make sure Node.js 24 or the version you downloaded is currently active before installing pnpm.
 Run:
 npm install -g pnpm@10.27.0
 
